@@ -162,8 +162,8 @@ function App() {
                 </ul>
               </div>
               <div className="dashboard-promo-card">
-                <div className="promo-title">Design<br/>Smarter<br/>Faster<br/><span className="promo-highlight">Make things<br/>Better</span></div>
-                <button className="promo-order">Order Now →</button>
+                <div className="promo-title">Verfalle<br/>nicht<br/>dem teufel<br/><span className="promo-highlight">Gehaltserhöhungen<br/>sind Teufelswek!</span></div>
+                <button className="promo-order">*Platz* →</button>
               </div>
             </div>
           </div>

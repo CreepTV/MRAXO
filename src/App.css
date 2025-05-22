@@ -357,7 +357,7 @@ footer {
 
 .dashboard-card {
   flex: 1 1 0;
-  background: #23243a;
+  background: #3a2323;
   border-radius: 16px;
   padding: 1.2em 1em 1em 1.2em;
   display: flex;
@@ -370,17 +370,17 @@ footer {
 }
 
 .dashboard-card.sales {
-  border-top: 4px solid #7c3aed;
+  border-top: 4px solid #ed3a3a;
 }
 .dashboard-card.orders {
-  border-top: 4px solid #22d3ee;
+  border-top: 4px solid #ee4b22;
 }
 .dashboard-card.invoices {
-  border-top: 4px solid #38bdf8;
+  border-top: 4px solid #f8a538;
 }
 .dashboard-card.payments {
-  border-top: 4px solid #a21caf;
-  background: linear-gradient(135deg, #6d28d9 60%, #a21caf 100%);
+  border-top: 4px solid #1cafaf;
+  background: linear-gradient(135deg, #d94028 60%, #af631c 100%);
   color: #fff;
 }
 
@@ -449,7 +449,7 @@ footer {
 
 .dashboard-chart-card {
   flex: 2 1 0;
-  background: #23243a;
+  background: #3a2323;
   border-radius: 16px;
   padding: 1.5em 1em 1em 1.5em;
   display: flex;
@@ -462,7 +462,7 @@ footer {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 1em;
-  color: #7c3aed;
+  color: #d51f1f;
 }
 
 .dashboard-bar-chart {
@@ -502,7 +502,7 @@ footer {
 .bar-label {
   font-size: 0.95em;
   margin-top: 0.2em;
-  color: #bdbdfc;
+  color: #bcaaaa;
 }
 
 .dashboard-transactions-card {
@@ -635,7 +635,7 @@ footer {
 
 .dashboard-social-card {
   flex: 1 1 0;
-  background: #fff;
+  background: #ffffff;
   color: #23243a;
   border-radius: 16px;
   margin-left: 0.5em;
