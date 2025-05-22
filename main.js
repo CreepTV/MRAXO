@@ -1,6 +1,6 @@
 import { app, BrowserWindow, ipcMain } from 'electron';
-import path from 'path';
 import { fileURLToPath } from 'url';
+import path from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,7 +17,8 @@ app.on('ready', () => {
     },
   });
 
-  mainWindow.loadFile('index.html');
+  // Lade die Vite-Entwicklungs-URL
+  mainWindow.loadURL('http://localhost:5173'); // Vite-Entwicklungsserver
 
   mainWindow.on('closed', () => {
     mainWindow = null;
