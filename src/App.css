@@ -144,6 +144,8 @@ section {
   background-color: #2a2a2a;
   border-radius: 8px;
   border: 1px solid #ff4d4d;
+  scroll-margin-top: 80px;
+  margin-top: 40px;
 }
 
 section h2 {
