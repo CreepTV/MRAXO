@@ -244,6 +244,7 @@ footer {
   background-color: #1a1a1a;
   padding: 1em;
   border-bottom: 2px solid #ff4d4d;
+  border-radius: 8px;
 }
 
 .search-bar {
@@ -353,11 +354,12 @@ footer {
 .dashboard-cards-row {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap; /* Allow wrapping for smaller viewports */
 }
 
 .dashboard-card {
   flex: 1 1 0;
-  background: #3a2323;
+  background: #222222;
   border-radius: 16px;
   padding: 1.2em 1em 1em 1.2em;
   display: flex;
@@ -379,8 +381,8 @@ footer {
   border-top: 4px solid #f8a538;
 }
 .dashboard-card.payments {
-  border-top: 4px solid #1cafaf;
-  background: linear-gradient(135deg, #d94028 60%, #af631c 100%);
+  border-top: 4px solid #df1616;
+  background: linear-gradient(135deg, #6b2014 60%, #9a5a1e 100%);
   color: #fff;
 }
 
@@ -410,7 +412,7 @@ footer {
 }
 
 .dashboard-card-link {
-  color: #7c3aed;
+  color: #ff9327;
   font-size: 0.95em;
   text-decoration: underline;
   margin-right: 0.5em;
@@ -449,7 +451,7 @@ footer {
 
 .dashboard-chart-card {
   flex: 2 1 0;
-  background: #3a2323;
+  background: #353535;
   border-radius: 16px;
   padding: 1.5em 1em 1em 1.5em;
   display: flex;
@@ -505,90 +507,6 @@ footer {
   color: #bcaaaa;
 }
 
-.dashboard-transactions-card {
-  flex: 1 1 0;
-  background: #fff;
-  color: #23243a;
-  border-radius: 16px;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding: 1.2em 1em 1em 1.2em;
-  box-shadow: 0 2px 8px 0 #0002;
-  display: flex;
-  flex-direction: column;
-  min-width: 200px;
-  max-width: 240px;
-}
-
-.transactions-title {
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 1em;
-  color: #7c3aed;
-}
-
-.transactions-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1em 0;
-}
-
-.transactions-list li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.7em;
-  font-size: 1em;
-  gap: 0.5em;
-}
-
-.transactions-list .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 0.5em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #e5e7eb;
-  flex-shrink: 0;
-}
-.transactions-list .icon.twitter {
-  background: #1da1f2;
-}
-.transactions-list .icon.xbox {
-  background: #107c10;
-}
-.transactions-list .icon.youtube {
-  background: #ff0000;
-}
-.transactions-list .icon.tiktok {
-  background: linear-gradient(135deg, #25f4ee 40%, #fe2c55 100%);
-}
-.transactions-list .icon.instagram {
-  background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-.amount {
-  font-weight: bold;
-  color: #23243a;
-  margin-left: 0.5em;
-}
-
-.transactions-viewall {
-  margin-top: auto;
-  background: #7c3aed;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.5em 1em;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.transactions-viewall:hover {
-  background: #a21caf;
-}
-
 .dashboard-promo-card {
   flex: 1 1 0;
   background: linear-gradient(135deg, #38bdf8 60%, #2563eb 100%);
@@ -638,14 +556,14 @@ footer {
   background: #ffffff;
   color: #23243a;
   border-radius: 16px;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-  padding: 1.2em 1em 1em 1.2em;
+  padding: 1.5em 1em 1em 1.5em;
   box-shadow: 0 2px 8px 0 #0002;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   min-width: 200px;
   max-width: 240px;
+  justify-content: space-between;
 }
 
 .social-title {
@@ -704,6 +622,12 @@ footer {
   margin-left: auto;
   min-width: 70px;
   text-align: right;
+}
+
+/* Highlighted search term */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
 }
 
 /* Responsive adjustments */

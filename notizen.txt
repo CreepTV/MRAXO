@@ -1,0 +1,5 @@
+Vite Server starten:
+npm run dev
+
+Electron starten:
+npm start
