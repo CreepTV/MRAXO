@@ -406,6 +406,7 @@ footer {
 
 .dashboard-card-footer {
   display: flex;
+  line-height: 17px;
   align-items: center;
   gap: 0.7em;
   margin-top: 0.7em;
@@ -625,7 +626,7 @@ footer {
 }
 
 /* Highlighted search term */
-.highlight {
+.searchhighlight {
   background-color: yellow;
   font-weight: bold;
 }
